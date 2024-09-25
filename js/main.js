@@ -1,18 +1,11 @@
-window.onload = loaded;
+export const lidsForm = document.getElementById("lids-form");
 
-/**
- * Simple Function that will be run when the browser is finished loading.
- */
-function loaded() {
-    // Assign to a variable so we can set a breakpoint in the debugger!
-    const hello = sayHello();
-    console.log(hello);
+export function submitLIDSForm(event) {
+    event.preventDefault();
+
+    const formData = new FormData(this);
+    const formProps = Object.fromEntries(formData);
+    alert(formProps.lids);
 }
 
-/**
- * This function returns the string 'hello'
- * @return {string} the string hello
- */
-export function sayHello() {
-    return 'hello';
-}
+lidsForm.onsubmit = submitLIDSForm;

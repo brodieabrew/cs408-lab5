@@ -24,7 +24,7 @@ address {
   right: 20mm;
 }
 
-h1 {
+article > h1 {
   position: absolute;
   top: 12mm;
   left: 20mm;
@@ -38,4 +38,123 @@ h1 {
   text-shadow: 1px 1px 1px black;
 }
 
-/* Your CSS below here */
+/*
+  Fallback declaration.
+*/
+#letter-bg {
+  background: url(../top-image.png) top no-repeat;
+}
+
+#letter-bg {
+  background: linear-gradient(rgba(105, 105, 105, 0.20), rgba(255, 255, 255, 0), rgba(105, 105, 105, 0.20)), 
+  url(../top-image.png) top no-repeat, 
+  url(../bottom-image.png) bottom no-repeat;
+  background-color: white;
+  border-top: 1mm solid red;
+  border-bottom: 1mm solid red;
+}
+
+article > h1 {
+  background-image: url(../logo.png);
+  
+  border-radius: 50%;
+  box-shadow: 3px 3px 1px black;
+  /*filter: drop-shadow(3px 3px 1px black);*/
+}
+
+article > section {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  width: 100%;
+}
+
+section > * {
+  font-family: 'Open Sans';
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+/* 
+  Font acquired from https://www.lipsum.com/.
+*/
+@font-face {
+  font-family: DauphinPlain;
+  src: url(../DauphinPlain.woff) format('woff');
+  font-weight: 400;
+  font-style: normal
+}
+
+section > h1, h2 {
+  font-family: DauphinPlain;
+  font-weight: 400;
+}
+
+section > h1 {
+  font-size: 50px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+section > h2 {
+  font-size: 24px;
+  text-align: left;
+}
+
+section > h3, h4 {
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 14px;
+  font-style: italic;
+}
+
+#languages {
+  text-align: center;
+  font-size: 12px;
+}
+
+a {
+  padding: 3px;
+}
+
+a:active, a:visited, a:link {
+  color: black;
+}
+
+hr {
+  width: 100%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+#panes > section {
+  width: 47%;
+  text-align: left;
+}
+
+#panes > section:nth-of-type(odd) {
+  float: left;
+  margin: 10px 1% 0 2%;
+}
+
+#panes > section:nth-of-type(even) {
+  float: right;
+  margin: 10px 2% 0 1%;
+}
+
+p {
+  text-align: justify;
+}
+
+input, label {
+  vertical-align: top;
+}

@@ -1,24 +1,24 @@
-# Web Dev Starter Code
+# CS408 Lab 5
 
 ## Overview
 
-TODO: Write a project description
+This project creates a letter using advanced CSS styling options. This project also makes use of some HTML and JavaScript, mostly as a vessel for demonstrating the CSS.
+
+## Usage
+From within the project directory run the following commands:
+
+`npm install`
+
+Once the modules have been installed, you can open the project using:
+
+`code .`
+
+Open "index.html" from the file explorer window and use the
+Visual Studio Code command palette (F1) to run the Live Preview Server.
 
 ## Sources and Credits
-
-TODO: You must credit the sources and authors of any code, libraries, or other
-assets you use in your project. If you leave this section blank, your project
-will be considered in violation of the Academic Honesty policy unless you truly
-created everything from scratch with no outside help. If you need to use a
-source that you cannot credit (e.g. a classmate's work), you must get explicit
-permission from your instructor.
-
-A simple bulleted list below is sufficient. For example:
-
-- Bootstrap: https://getbootstrap.com/
-- jQuery: https://jquery.com/
-- Background image: https://unsplash.com/photos/...
-- Sound effects: https://freesound.org/people/...
-- Icons: https://fontawesome.com/
-- Fonts: https://fonts.google.com/
-- etc.
+* [MDN](https://developer.mozilla.org/en-US/)
+* [W3Schools](https://www.w3schools.com/)
+* [StackOverflow](https://stackoverflow.com/)
+* [Lipsum](https://www.lipsum.com/)
+* [Google Fonts](https://fonts.google.com/)

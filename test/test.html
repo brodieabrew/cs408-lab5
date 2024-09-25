@@ -5,7 +5,23 @@
 <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.21.0.css">
 <body>
   <div id="qunit"></div>
-  <div id="qunit-fixture"></div>
+  <div id="qunit-fixture">
+    <form id="lids-form">
+      <input type="radio" id="lorem" name="lids" value="lorem">
+      <label for="lorem">lorem</label>
+      <br>
+      <input type="radio" id="ipsum" name="lids" value="ipsum">
+      <label for="ipsum">ipsum</label>
+      <br>
+      <input type="radio" id="dolor" name="lids" value="dolor">
+      <label for="dolor">dolor</label>
+      <br>
+      <input type="radio" id="sit" name="lids" value="sit">
+      <label for="sit">sit</label>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
   <script src="https://code.jquery.com/qunit/qunit-2.21.0.js"></script>
   <script type="module" src="test.js"></script>
 </body>
